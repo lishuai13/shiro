@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    username: root
+    password: 143188
+    url: jdbc:mysql://localhost:3306/shiro?serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  redis:
+    host: 127.0.0.1
+
+#mybatis-plus
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mappers/*.xml
+  type-aliases-package: com.lishuai.entity
